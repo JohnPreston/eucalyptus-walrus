@@ -1,5 +1,4 @@
 ---
-# tasks file for eucalyptus-sc
+# tasks file for eucalyptus-walrus
 
-- include: debug.yml
 - include: packages.yml

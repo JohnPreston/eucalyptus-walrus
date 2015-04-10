@@ -1,5 +1,5 @@
 ---
-# defaults file for eucalyptus-sc
+# defaults file for eucalyptus-walrus
 
 
 clc_public_key_path: /var/tmp/clc-pub-key

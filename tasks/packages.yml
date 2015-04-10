@@ -34,10 +34,10 @@
   notify:
   - ntpd start
 
-- name: Setup SC packages
+- name: Setup Walrus packages
   yum: name="{{ item }}" state=latest
   with_items:
-  - eucalyptus-sc
+  - eucalyptus-walrus
   tags:
-  - sc
+  - walrus
   - packages

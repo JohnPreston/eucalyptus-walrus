@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: John Mille
-  description: Ansible Role to install Eucalyptus SC
+  dewalrusription: Ansible Role to install Eucalyptus Walrus
   license: GPLv3
   min_ansible_version: 1.6
   platforms:
