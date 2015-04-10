@@ -34,7 +34,7 @@
   notify:
   - ntpd start
 
-- name: Setup CLC packages
+- name: Setup SC packages
   yum: name="{{ item }}" state=latest
   with_items:
   - eucalyptus-sc
