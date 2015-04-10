@@ -1,4 +1,6 @@
 ---
 # tasks file for eucalyptus-walrus
 
+- include: debug.yml
 - include: packages.yml
+- include: init.yml

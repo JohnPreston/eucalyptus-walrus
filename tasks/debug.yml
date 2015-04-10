@@ -7,18 +7,18 @@
   tags:
   - sc
 
-- name: Fail if partition missing
-  fail: msg="Partition missing"
-  when: partition is not defined
-  register: partition_check
+- name: Fail if java_iface missing
+  fail: msg="java_iface missing"
+  when: java_iface is not defined
+  register: java_iface_check
   ignore_errors: True
   tags:
-  - sc
+  - walrus
 
 - name: Debug return values
   debug: msg="{{ item }}"
   with_items:
-  - "{{ partition_check }}"
+  - "{{ java_iface_check }}"
   tags:
-  - sc
+  - walrus
   - debug
