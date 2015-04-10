@@ -1,0 +1,5 @@
+---
+# vars file for eucalyptus-clc
+
+# Specify the NIC to be used by the process
+#java_iface:

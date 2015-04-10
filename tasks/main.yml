@@ -1,0 +1,5 @@
+---
+# tasks file for eucalyptus-sc
+
+- include: debug.yml
+- include: packages.yml

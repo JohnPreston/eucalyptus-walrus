@@ -1,0 +1,24 @@
+
+- name: Debug core variables
+  debug: msg={{ item }}
+  with_items:
+  - "{{ partition }}"
+  - "{{ java_iface }}"
+  tags:
+  - sc
+
+- name: Fail if partition missing
+  fail: msg="Partition missing"
+  when: partition is not defined
+  register: partition_check
+  ignore_errors: True
+  tags:
+  - sc
+
+- name: Debug return values
+  debug: msg="{{ item }}"
+  with_items:
+  - "{{ partition_check }}"
+  tags:
+  - sc
+  - debug
